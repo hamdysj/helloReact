@@ -1,0 +1,9 @@
+State Method    -   used within of a component 
+setState        -   used to update the state of a component
+1.  To modify the state a component, setState should be used
+2.  If a code need to be executed after the state has been updated, 
+    the code should be placed as a callback function within the setState
+    method as a second, argument.
+3.  When a state needs to be updated based on a previous state, pass in a function as
+    an argument to setState instead of a regular object.
+
