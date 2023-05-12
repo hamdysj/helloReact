@@ -1,9 +1,33 @@
 import React, { Component } from 'react'
 
-export class Counter extends Component {
+class Counter extends Component {
+
+    constructor() {
+      super()
+    
+      this.state = {
+         count: 0
+      }
+    }
+
+    increment(){
+        this.setState(currentState => ({
+            count: currentState.count + 1
+        }))
+    }
+
+    incrementTwo(){
+        this.increment()
+        this.increment()
+    }
+
+
   render() {
     return (
-      <div>Counter</div>
+        <div>
+             <div>Count: {this.state.count}</div>
+             <button onClick={() => this.incrementTwo()}>Counter</button>
+        </div>
     )
   }
 }

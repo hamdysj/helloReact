@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import './App.css';
 import Welcome from './components/welcome';
 import Greet from './components/Greet';
+import Counter from './components/Counter';
 
 //function App() {
   class App extends Component {
@@ -11,7 +12,9 @@ import Greet from './components/Greet';
         <div className="App">
        
         <Welcome name="Hamdy" /> 
-        <Greet  />
+        <Greet  name="Folly"/>
+        <Counter />
+        
         </div>
       );
     }
